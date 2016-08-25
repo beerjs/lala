@@ -47,10 +47,28 @@ controls: false
 # We need speakers
 ## talk about javascript? something awesome you made?
 - - -
+* Speaker Notes:
 * seriously, anything you want to talk about
 * talks are about 30 min and should somehow relate to JS (but how is up to you!)
 
--- bg
+-- bg light
 ![the goal](http://i.giphy.com/s0z685OFhWyuk.gif)
+# we wanna make you Neo
 - - -
+* Speaker Notes:
 * this is all about teaching the community about JS
+
+
+-- bg light
+![navigate!](http://i.giphy.com/3oEdvcMqHmTgBzkAoM.gif)
+# Navigating Javascript
+- - -
+* Speaker Notes:
+* now on to the first "talk"
+
+--
+* [Codepen](http://codepen.io)
+* [Hyperdev](http://hyperdev.com)
+* [Raganwald (Reginald Braithwaite)](http://raganwald.com)
+* [Getify (Kyle Simpson)](http://getify.me/)
+

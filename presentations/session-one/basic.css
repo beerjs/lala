@@ -17,8 +17,12 @@ h1, h2, h3, h4, h5, h6 {
    top: inherit;
 }
 
+.progress {
+   z-index: 100000;
+}
+
 .progress-bar {
-   background-color: #F8DC3D;
+   background-color: #FFF717;
 }
 
 
