@@ -66,7 +66,8 @@ controls: false
 * Speaker Notes:
 * now on to the first "talk"
 
---
+-- bg
+![headroom](http://i.giphy.com/ld797IzRhlZew.gif)
 * [Codepen](http://codepen.io)
 * [Hyperdev](http://hyperdev.com)
 * [Raganwald (Reginald Braithwaite)](http://raganwald.com)
