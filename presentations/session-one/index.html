@@ -360,6 +360,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 body {
    font-size: "Open Sans", sans-serif;
    font-weight: 400;
+   overflow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -370,10 +371,16 @@ h1, h2, h3, h4, h5, h6 {
 .slide {
    background: #fff;
    text-align: center;
+   top: inherit;
 }
 
+.progress-bar {
+   background-color: #F8DC3D;
+}
+
+
 blockquote {
-   
+
 }
 
 blockquote::before {
@@ -385,12 +392,38 @@ blockquote::before {
 }
 
 img {
-   width:25%;
+   width:50%;
    margin: 0 auto;
 }
 
-blockquote code {
+hr {
+   display: none;
+}
+
+hr ~ ul {
    display:none;
+}
+
+.bg {
+   background: none;
+}
+
+.light {
+   color: #fff;
+}
+
+.bg .slide-content p:first-child {
+   position:absolute;
+   top:0;
+   left:0;
+   height:100%;
+   width:100%;
+   z-index: -1;
+}
+
+.bg .slide-content p img:first-child {
+   height:100%;
+   width:100%;
 }
 
   </style>
@@ -402,7 +435,8 @@ blockquote code {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="beerjs-lala">beerjs/lala</h1>
+    <section class="slide-content"><p><img src="http://3.bp.blogspot.com/-PTty3CfTGnA/TpZOEjTQ_WI/AAAAAAAAAeo/KeKt_D5X2xo/s1600/js.jpg" alt="js"></p>
+<h2 id="beerjs-lala">beerjs/lala</h2>
 </section>
   </div>
   <div class="slide hidden" id="slide-2">
@@ -414,28 +448,59 @@ blockquote code {
   <div class="slide hidden" id="slide-3">
     <section class="slide-content"><h3 id="wat">wat</h3>
 <p><img src="img/wat.gif" alt="wat"></p>
-<blockquote>
-<p><code>Speaker Notes: what even is this? beerjs is a global meetup for people interested in Javascript.</code></p>
-</blockquote>
+<hr>
+<ul>
+<li>Speaker Notes: </li>
+<li>what even is this? </li>
+<li>beerjs is a global meetup for people interested in Javascript.</li>
+<li>we focus on speakers, beer, awesome companies and javascript (duh)</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-4">
+  <div class="slide hidden  bg light" id="slide-4">
     <section class="slide-content"><p><img src="http://i.giphy.com/YFkpsHWCsNUUo.gif" alt="javascript?"></p>
+<hr>
+<ul>
+<li>Speaker Notes:</li>
+<li>for a lot of you, javascript may feel like this</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-5">
-    <section class="slide-content"><h1 id="we-need-sponsors">We need sponsors</h1>
+  <div class="slide hidden  bg" id="slide-5">
+    <section class="slide-content"><p><img src="http://i.giphy.com/ErzFbmLDvIzkI.gif" alt="han shot first"></p>
+<hr>
+<ul>
+<li>Speaker Notes:</li>
+<li>our goal is to make it feel like this</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
-    <section class="slide-content"><h1 id="we-need-speakers">We need speakers</h1>
+  <div class="slide hidden  bg" id="slide-6">
+    <section class="slide-content"><p><img src="http://i.giphy.com/l0MYResEdNIyniuL6.gif" alt="background"></p>
+<h1 id="we-need-sponsors">We need sponsors</h1>
+<h2 id="event-space-buy-some-beer-maybe-pizza-">event space? buy some beer? maybe pizza?</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><h2 id="what-are-the-talks">what are the talks</h2>
+  <div class="slide hidden  bg light" id="slide-7">
+    <section class="slide-content"><p><img src="http://i.giphy.com/bb2KrhhHeY6Dm.gif" alt="background"></p>
+<h1 id="we-need-speakers">We need speakers</h1>
+<h2 id="talk-about-javascript-something-awesome-you-made-">talk about javascript? something awesome you made?</h2>
+<hr>
+<ul>
+<li>seriously, anything you want to talk about</li>
+<li>talks are about 30 min and should somehow relate to JS (but how is up to you!)</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden author-slide" id="slide-8">
+  <div class="slide hidden  bg" id="slide-8">
+    <section class="slide-content"><p><img src="http://i.giphy.com/s0z685OFhWyuk.gif" alt="the goal"></p>
+<hr>
+<ul>
+<li>this is all about teaching the community about JS</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-9">
     <section class="slide-content"><div class="author">
   <h1 class="name">Conlin Durbin</h1>
     <h3 class="twitter">

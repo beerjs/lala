@@ -3,6 +3,7 @@
 body {
    font-size: "Open Sans", sans-serif;
    font-weight: 400;
+   overflow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,10 +14,16 @@ h1, h2, h3, h4, h5, h6 {
 .slide {
    background: #fff;
    text-align: center;
+   top: inherit;
 }
 
+.progress-bar {
+   background-color: #F8DC3D;
+}
+
+
 blockquote {
-   
+
 }
 
 blockquote::before {
@@ -28,10 +35,36 @@ blockquote::before {
 }
 
 img {
-   width:25%;
+   width:50%;
    margin: 0 auto;
 }
 
-blockquote code {
+hr {
+   display: none;
+}
+
+hr ~ ul {
    display:none;
+}
+
+.bg {
+   background: none;
+}
+
+.light {
+   color: #fff;
+}
+
+.bg .slide-content p:first-child {
+   position:absolute;
+   top:0;
+   left:0;
+   height:100%;
+   width:100%;
+   z-index: -1;
+}
+
+.bg .slide-content p img:first-child {
+   height:100%;
+   width:100%;
 }
