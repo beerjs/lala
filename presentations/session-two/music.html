@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <head></head>
+   <body>
+      <script>
+var audioContext = new AudioContext();
+var oscillator = audioContext.createOscillator();
+oscillator.connect(audioContext.destination);
+oscillator.frequency.value = 440;
+oscillator.start();
+oscillator.stop();
+      </script>
+   </body>
+</html>

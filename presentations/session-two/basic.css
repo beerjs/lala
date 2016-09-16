@@ -1,0 +1,105 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:300,400,600,700';
+
+html {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   font-size: "Open Sans", sans-serif;
+   font-weight: 400;
+   overflow: hidden;
+   height:100%;
+   width:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 300;
+   border:none;
+}
+
+.slide {
+   background: #fff;
+   text-align: center;
+   height: 100%;
+   top: 0;
+}
+
+.progress {
+   z-index: 100000;
+}
+
+.progress-bar {
+   background-color: #FFF717;
+}
+
+
+blockquote {
+
+}
+
+blockquote::before {
+   font-family: "Fira Mono";
+   font-size: 100px;
+   content: '"';
+   float: left;
+   display: block;
+}
+
+img {
+   width:50%;
+   margin: 0 auto;
+}
+
+hr {
+   display: none;
+}
+
+hr ~ ul {
+   display:none;
+}
+
+.bg {
+   background: none;
+}
+
+.light {
+   color: #fff;
+}
+
+.bg .slide-content p:first-child {
+   position:absolute;
+   top:0;
+   left:0;
+   height:100%;
+   width:100%;
+   z-index: -1;
+}
+
+.bg .slide-content p img:first-child {
+   height:100%;
+   width:100%;
+}
+
+.code {
+   background: #2D2D2D;
+}
+
+.snippet-button {
+   background: #FFF717;
+   height: 40px;
+   line-height: 15px;
+   color: #222;
+   font-size: 16px;
+   padding: 1% 2%;
+   border: none;
+   position: fixed;
+   bottom: 5%;
+   right: 5%;
+}
+
+.snippet-wrapper {
+   max-height: 75%;
+   overflow: scroll;
+   position: relative;
+}
